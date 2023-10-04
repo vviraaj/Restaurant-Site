@@ -139,7 +139,7 @@ const Resturant = () => {
             className="dish-images"
             src={listOfRestaurant[activeImageIndex].images[0].url}
             alt={`Restaurant ${activeImageIndex + 1}`}
-            onClick={() => Move_to_restaurant(activeImageIndex)}
+            // onClick={() => Move_to_restaurant(activeImageIndex)}
           />
         ) : (
           <p>No restaurants available</p>
