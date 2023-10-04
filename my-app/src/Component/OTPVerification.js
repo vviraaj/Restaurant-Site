@@ -40,10 +40,13 @@ const OTPVerification = () => {
             sixthNumber: "",
           });
           Setmessage(response.data.error_message);
+          setTimeout(() => {
+            Setmessage("");
+          }, 3000);
         } else {
-          let Token = response.data.data.token
+          let Token = response.data.data.token;
           Setmessage("Registration Completed");
-          sessionStorage.setItem("Token" ,Token )
+          sessionStorage.setItem("Token", Token);
           setTimeout(() => {
             Setmessage("");
             navigate(`/Restaurant`);

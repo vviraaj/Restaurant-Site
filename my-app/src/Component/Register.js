@@ -20,6 +20,9 @@ const Registration = () => {
       .then((response) => {
         if (response.data && response.data.error) {
           Setmessage(response.data.error[0].error);
+          setTimeout(() => {
+            Setmessage("");
+          }, 3000);
           
         } else {
           if (response.data.status == "Success") {

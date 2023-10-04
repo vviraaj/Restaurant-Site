@@ -9,6 +9,8 @@ import RestaurantDetails from "./Component/RestaurantDetails";
 const Register = React.lazy(() => import("./Component/Register"));
 
 function App() {
+  const token = sessionStorage.getItem("Token");
+
   return (
     <div>
       <BrowserRouter>
@@ -25,18 +27,20 @@ function App() {
             name="OTP Verification"
             element={<OTPVerification />}
           />
-          <Route
-            exact
-            path="/Restaurant"
-            name="Resturant"
-            element={<Resturant />}
-          />
-          <Route
-            exact
-            path="/RestaurantDetails"
-            name="Resturant Details"
-            element={<RestaurantDetails />}
-          />
+        
+              <Route
+                exact
+                path="/Restaurant"
+                name="Resturant"
+                element={<Resturant />}
+              />
+              <Route
+                exact
+                path="/RestaurantDetails"
+                name="Resturant Details"
+                element={<RestaurantDetails />}
+              />
+        
         </Routes>
       </BrowserRouter>
     </div>
