@@ -51,14 +51,19 @@ const Resturant = () => {
 
   return (
     <div className="wrapper">
+      {/* for the mainbar of location */}
       <div className="header-div">
         <p className="mx-4 paragraph">Pre Order From</p>
         <p className="mx-4 bold-paragraph">Connaught Place</p>
       </div>
+
+      {/* For the exploring */}
       <div className="mx-2 explore-div">
         <h3 className="mx-4 mt-2 paragraph">Karan</h3>
         <p className="mx-4">Lets explore this evening</p>
       </div>
+
+      {/* For the side one where we have offers and wallet */}
       <div className="side-div">
         <div
           style={{
@@ -85,6 +90,8 @@ const Resturant = () => {
           </div>
         </div>
       </div>
+
+      {/* For the Taste near by */}
       <div className="mt-4 mx-2 taste-div">
         <div
           style={{
@@ -124,6 +131,8 @@ const Resturant = () => {
           </div>
         </div>
       </div>
+
+      {/* For the Dish-images */}
       <div className="mt-3 mx-2 text-center dish-header">
         {listOfRestaurant && listOfRestaurant.length > 0 ? (
           <img
@@ -137,8 +146,7 @@ const Resturant = () => {
         )}
       </div>
 
- 
-
+      {/* For the List of Restaurant */}
       <div>
         <h2 className="mt-3 mx-2">Popular Ones</h2>
         <div
