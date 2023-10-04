@@ -1,0 +1,138 @@
+.Main-page {
+  position: relative;
+  height: 100vh;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.Registration-page {
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+@media (max-width: 200px) {
+  .Registration-page {
+    max-width: none;
+  }
+  Main-page {
+    position: relative;
+    height: 70vh;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.ToastMessage {
+  position: absolute;
+  top: 20%;
+  right: 0;
+  margin-top: 10px;
+  border: 1px solid lightgray;
+  padding: 2px;
+  border-radius: 5px;
+  text-align: center;
+  width: 70%;
+  max-width: 200px;
+  background-color: lightgreen;
+}
+
+/* Add a media query for responsiveness */
+@media (max-width: 200px) {
+  .ToastMessage {
+    width: 70%;
+    max-width: none;
+  }
+}
+
+.wrapper {
+  position: relative;
+}
+
+.header-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-shadow: 0 2px 0px rgba(0, 0, 0, 0.1);
+  padding: 2px;
+  width: 100%;
+  height: 70px;
+  position: relative;
+  z-index: 2;
+  border-radius: 2px;
+}
+
+.paragraph {
+  color: grey;
+  margin: 0;
+}
+
+.bold-paragraph {
+  margin-top: -5%;
+  font-weight: bold;
+  margin: 0;
+}
+
+.explore-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 50%;
+  height: auto;
+  background-color: #fbf8f8;
+  border-radius: 10px;
+  margin-top: -2px;
+  position: relative;
+  z-index: 0;
+}
+
+.side-div {
+  position: absolute;
+  top: 5%;
+  right: 10%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 10px;
+}
+
+
+.taste-div {
+  overflow: hidden;
+}
+
+.Taste-restaurant {
+  border-radius: 10px;
+  height: 40%;
+  background-color: #acb6cc;
+}
+
+.taste-images {
+  height: 80px;
+  width: 130px;
+  border-radius: 5px;
+}
+
+.dish-images {
+  width: 90%;
+  height: 120px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px -2px rgba(0, 0, 0, 0.4);
+}
+
+.popular-images {
+  width: 160px;
+  height: 160px;
+  border-radius: 10px;
+  margin-top: 5%;
+}
+
+.populerones-info {
+  position: absolute;
+  top: 13%;
+  left: 170px;
+}
+
